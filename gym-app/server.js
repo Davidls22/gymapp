@@ -62,5 +62,12 @@ app.use('/api/', registerRouter);
 app.use('/api/classes', classRouter);
 app.use('/', bookedClassesRoute);
 
+if (process.env.NODE_ENV === 'production') {
+    //*Set static folder up in production
+    app.use(express.static('frontend/build'));
+
+    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build','index.html')));
+  }
+
 // Start the server
 app.listen(port, () => console.log(`Server listening on port ${port}`));
