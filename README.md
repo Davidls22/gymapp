@@ -2,6 +2,11 @@ Gym Class Booking App (MERN Stack) _
 
 This is a web application for managing gym class bookings. It is built using the MERN stack, which consists of MongoDB, Express, React, and Node.js. This document outlines the system architecture and specific system requirements.
 
+Deployment _______
+
+The app has been deployed to Heroku and can be accessed at the following URL: https://gymapp-ds1.herokuapp.com
+The app has been deployed as a single entity (backend and frontend together) and can be accessed via the link above.
+
 How to Use _____
 
 As Admin ____
@@ -53,11 +58,6 @@ To ensure the security of this application, I taken the following measures:
 JSON Web Tokens (JWT) for authentication and authorization
 
 I have implemented API key security using the helmet middleware. helmet is a collection of middleware functions that helps secure Express apps by setting various HTTP headers.
-
-Deployment _______
-
-The app has been deployed to Render and can be accessed at the following URL:
-The app has been deployed as a single entity (backend and frontend together) and can be accessed via the link above.
 
 System Architecture ______
 
